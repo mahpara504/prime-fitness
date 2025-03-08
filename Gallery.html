@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Fitness- Gallery</title>
+    <!-- boostrap css/ -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <!-- boostrap js  -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <!-- jqury  -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- external files links -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="Gallery.css">
+    <!-- favicon link  -->
+    <link rel="shortcut icon" href="/images/logo2.png" type="image/x-icon">
+    <!-- font awsome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+<link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo2.png" alt="Prime Fitness Logo" height="70">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a id="home-link" href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a id="activity-link" href="activity.html" class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">Activities</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="cycling.html">Cycling</a></li>
+                                <li><a class="dropdown-item" href="swiming.html">Swimming</a></li>
+                                <li><a class="dropdown-item" href="sportsfitness.html">Sports & Fitness</a></li>
+                                <li><a class="dropdown-item" href="GroupExercise.html">Group Exercise</a></li>
+                                <li><a class="dropdown-item" href="Membership.html">Membership</a></li>
+                                <li><a class="dropdown-item" href="SalonSpa.html">Salon & Spa</a></li>
+                                <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                                <li><a class="dropdown-item" href="ListofEquipment.html">Equipments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a id="aboutus-link" href="aboutus.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a id="enquiry-link" href="enquiry.html" class="nav-link">Enquiry Form</a>
+                        </li>
+                        <li class="nav-item"><a id="faqs-link" href="faqs.html" class="nav-link">FAQs</a></li>
+                        <li class="nav-item"><a id="sitemap-link" href="sitemap.html" class="nav-link">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- navbar end-->
+
+    <div class="gallery-header">
+        <h1>Prime Fitness</h1>
+        <p>Experience excellence in fitness and wellness</p>
+    </div>
+
+    <div class="category-navigation">
+        <button class="category-btn active" data-target="cycling">Cycling</button>
+        <button class="category-btn" data-target="swimming">Swimming</button>
+        <button class="category-btn" data-target="sports">Sports & Fitness</button>
+        <button class="category-btn" data-target="group">Group Exercises</button>
+        <button class="category-btn" data-target="spa">Salon & Spa</button>
+        <button class="category-btn" data-target="equipment">Equipment</button>
+    </div>
+
+    <!-- Cycling Section -->
+    <section id="cycling" class="gallery-section active">
+
+        <div class="section-header">
+            <h2>Cycling</h2>
+            <p>State-of-the-art cycling studios and equipment</p>
+        </div>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="images/gallindoor.webp" alt="Indoor Cycling Studio">
+                <div class="item-overlay">
+                    <h3>Indoor Cycling Studio</h3>
+                    <p>Premium bikes with performance tracking</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallgroup.webp" alt="Group Cycling Class">
+                <div class="item-overlay">
+                    <h3>Group Cycling</h3>
+                    <p>High-energy classes led by expert instructors</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallcycletech.jpg" alt="Cycle Techniques">
+                <div class="item-overlay">
+                    <h3>Cycling Techniques</h3>
+                    <p>Learn proper form and maximize your workout</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallperform.jpg" alt="Performance Cycling">
+                <div class="item-overlay">
+                    <h3>Performance Training</h3>
+                    <p>Advanced cycling programs for enthusiasts</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Swimming Section -->
+    <section id="swimming" class="gallery-section">
+
+        <div class="section-header">
+            <h2>Swimming</h2>
+            <p>Olympic-sized pools and aquatic programs</p>
+        </div>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="images/gallindoorpool1.jpg" alt="Indoor Pool">
+                <div class="item-overlay">
+                    <h3>Indoor Pool</h3>
+                    <p>Temperature-controlled Olympic-sized swimming pool</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallswimm.webp" alt="Swim Lessons">
+                <div class="item-overlay">
+                    <h3>Swim Lessons</h3>
+                    <p>Professional instruction for all ages and skill levels</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallaqua.jpg" alt="Aqua Fitness">
+                <div class="item-overlay">
+                    <h3>Aqua Fitness</h3>
+                    <p>Low-impact, high-resistance water workouts</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/gallswimtech.jpg" alt="Swim Techniques">
+                <div class="item-overlay">
+                    <h3>Swimming Techniques</h3>
+                    <p>Perfect your stroke with our expert tips</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sports & Fitness Section -->
+    <section id="sports" class="gallery-section">
+        <div class="section-header">
+            <h2>Sports & Fitness</h2>
+            <p>Multi-sport facilities and training programs</p>
+        </div>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="images/gallbasket.webp" alt="Basketball Court">
+                <div class="item-overlay">
+                    <h3>Basketball Court</h3>
+                    <p>Professional-grade courts for practice and play</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/galltennis.jpg" alt="Tennis Courts">
+                <div class="item-overlay">
+                    <h3>Tennis Courts</h3>
+                    <p>Indoor and outdoor courts with professional coaching</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/gallsports.jpg" alt="Sports Training">
+                <div class="item-overlay">
+                    <h3>Sports Training</h3>
+                    <p>Specialized training for various sports</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallrun.jpg" alt="Running Track">
+                <div class="item-overlay">
+                    <h3>Indoor Track</h3>
+                    <p>Climate-controlled running and walking track</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Group Exercises Section -->
+    <section id="group" class="gallery-section">
+        <div class="section-header">
+            <h2>Group Exercises</h2>
+            <p>Diverse classes led by certified instructors</p>
+        </div>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="images/gallyoga.jpg" alt="Yoga Class">
+                <div class="item-overlay">
+                    <h3>Yoga</h3>
+                    <p>Find balance and flexibility in our serene studios</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallhitwork.jpg" alt="HIIT Workouts">
+                <div class="item-overlay">
+                    <h3>HIIT Workouts</h3>
+                    <p>High-intensity interval training for maximum results</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallplaits.jpg" alt="Pilates Class">
+                <div class="item-overlay">
+                    <h3>Pilates</h3>
+                    <p>Core-strengthening exercises for all fitness levels</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallzumba.jpg" alt="Zumba Class">
+                <div class="item-overlay">
+                    <h3>Zumba</h3>
+                    <p>Dance-based fitness that's fun and effective</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Salon & Spa Section -->
+    <section id="spa" class="gallery-section">
+        <div class="section-header">
+            <h2>Salon & Spa</h2>
+            <p>Rejuvenate your body and mind</p>
+        </div>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="images/gallmessage.png" alt="Massage Room">
+                <div class="item-overlay">
+                    <h3>Massage Therapy</h3>
+                    <p>Relax and recover with our skilled therapists</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallsauna.webp" alt="Sauna">
+                <div class="item-overlay">
+                    <h3>Sauna & Steam Room</h3>
+                    <p>Detoxify and unwind in our premium facilities</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallsalon.webp" alt="Salon Services">
+                <div class="item-overlay">
+                    <h3>Hair & Beauty Salon</h3>
+                    <p>Complete your wellness experience with our salon services</p>
+                </div>
+            </div>
+
+             <div class="gallery-item">
+                <img src="images/gallspatreat.avif" alt="Spa Treatment">
+                <div class="item-overlay">
+                    <h3>Spa Treatments</h3>
+                    <p>Experience our signature wellness treatments</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section id="equipment" class="gallery-section">
+        <div class="section-header">
+            <h2>Equipment</h2>
+            <p>Cutting-edge fitness technology and equipment</p>
+        </div>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="images/gallcardio.webp" alt="Cardio Equipment">
+                <div class="item-overlay">
+                    <h3>Cardio Zone</h3>
+                    <p>Latest treadmills, ellipticals, and rowing machines</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallstrength.jpg" alt="Strength Equipment">
+                <div class="item-overlay">
+                    <h3>Strength Training</h3>
+                    <p>Comprehensive selection of free weights and machines</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallequipment.webp" alt="Equipment Tutorial">
+                <div class="item-overlay">
+                    <h3>Equipment Tutorial</h3>
+                    <p>Learn how to use our equipment safely and effectively</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallfunctional.jpg" alt="Functional Training">
+                <div class="item-overlay">
+                    <h3>Functional Training Area</h3>
+                    <p>Specialized equipment for functional fitness</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Category navigation
+            const categoryButtons = document.querySelectorAll(".category-btn")
+            const gallerySections = document.querySelectorAll(".gallery-section")
+
+            categoryButtons.forEach((button) => {
+                button.addEventListener("click", function () {
+                    // Remove active class from all buttons and sections
+                    categoryButtons.forEach((btn) => btn.classList.remove("active"))
+                    gallerySections.forEach((section) => section.classList.remove("active"))
+
+                    // Add active class to clicked button
+                    this.classList.add("active")
+
+                    // Show the corresponding section
+                    const targetSection = document.getElementById(this.getAttribute("data-target"))
+                    targetSection.classList.add("active")
+
+                    // Trigger animations again
+                    const items = targetSection.querySelectorAll(".gallery-item")
+                    items.forEach((item, index) => {
+                        item.style.animation = "none"
+                        setTimeout(() => {
+                            item.style.animation = `slideUp 0.6s forwards ${index * 0.1}s`
+                        }, 10)
+                    })
+
+                    // Smooth scroll to section
+                    targetSection.scrollIntoView({ behavior: "smooth", block: "start" })
+                })
+            })
+
+            // Scroll animation
+            function checkScroll() {
+                const visibleSection = document.querySelector(".gallery-section.active")
+                if (visibleSection) {
+                    const items = visibleSection.querySelectorAll(".gallery-item")
+                    items.forEach((item) => {
+                        const itemTop = item.getBoundingClientRect().top
+                        const windowHeight = window.innerHeight
+
+                        if (itemTop < windowHeight * 0.9) {
+                            item.style.opacity = "1"
+                            item.style.transform = "translateY(0)"
+                        }
+                    })
+                }
+            }
+
+            // Initial check and add scroll listener
+            checkScroll()
+            window.addEventListener("scroll", checkScroll)
+
+            // Sticky navigation effect
+            const categoryNav = document.querySelector(".category-navigation")
+            const headerHeight = document.querySelector(".gallery-header").offsetHeight
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY >= headerHeight) {
+                    categoryNav.classList.add("sticky")
+                } else {
+                    categoryNav.classList.remove("sticky")
+                }
+            })
+
+            // Initialize - show first section
+            if (gallerySections.length > 0) {
+                gallerySections[0].classList.add("active")
+                categoryButtons[0].classList.add("active")
+            }
+        })
+
+
+    </script>
+
+
+
+    <!-- footer start -->
+    <footer>
+
+        <div class="foot">
+
+            <div class="feet">
+
+                <div class="foo">
+
+                    <image src="./images/logo2.png" alt="This is logo" width="100%">
+
+                        <br> <br>
+
+                        <p> "Strength doesn't come from what you can do, it comes from overcoming the things you once
+                            thought you couldn’t." 💪</p>
+
+                </div>
+
+                <div class="quick">
+
+                    <h3 class="footh3">Quick Links</h3>
+
+                    <div class="link">
+
+                        <p><a class="quick-links" href="cycling.html">Cycling</a></p>
+
+                        <p><a class="quick-links" href="swiming.html">Swimming</a></p>
+
+                        <p><a class="quick-links" href="sportsfitness.html">Sports & Fitness</a></p>
+
+                        <p><a class="quick-links" href="GroupExercise.html">Group Excercises</a></p>
+
+                        <p><a class="quick-links" href="Membership.html">Membership</a></p>
+
+                        <p><a class="quick-links" href="SalonSpa.html">Salon & Spa</a></p>
+
+                        <p><a class="quick-links" href="Gallery.html">Gallery</a></p>
+
+                        <p><a class="quick-links" href="ListofEquipment.html">Equipments</a></p>
+
+                    </div>
+
+                </div>
+
+                <div class="info">
+
+                    <h3 class="footh3">Locations</h3>
+
+                    <div class="address">
+
+                        <a href="mapgul.html">
+                            <p><i class="fa fa-map-marker"></i> Gulberg</p>
+                        </a>
+
+                        <a href="mapjohar.html">
+                            <p><i class="fa fa-map-marker"></i> Johar Town</p>
+                        </a>
+
+                        <a href="mapdha.html">
+                            <p><i class="fa fa-map-marker"></i> DHA</p>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="info">
+
+                    <h3 class="footh3">Contact info</h3>
+
+                    <div class="address">
+
+                        <p><i class="fa-solid fa-phone"></i> Gulberg: 0322-2295555</p>
+
+                        <p><i class="fa-solid fa-envelope"></i> prime.fitnessgul@gmail.com</p>
+                        <br>
+
+                        <p><i class="fa-solid fa-phone"></i> Johar Town: 0322-2265559</p>
+
+                        <p><i class="fa-solid fa-envelope"></i> prime.fitnessjoh@gmail.com</p>
+                        <br>
+
+                        <p><i class="fa-solid fa-phone"></i> DHA: 0322-2255591</p>
+
+                        <p><i class="fa-solid fa-envelope"></i> prime.fitnessdha@gmail.com</p>
+
+                    </div>
+
+                </div>
+
+                <div class="touch">
+
+                    <h3 class="footh3">Stay In Touch</h3>
+
+                    <div>
+
+                        <input type="email" id="email" placeholder="prime.fitness@gmail.com" class="sear" required>
+
+                    </div>
+
+
+                    <div>
+
+                        <button name="submit" value="submit" id="sub" class="submit">Submit</button>
+
+                    </div>
+
+                    <div class="icons">
+
+                        <div>
+                            <a href="https://www.instagram.com/" target="_blank"><img class="ins"
+                                    src="/images/instagram.png" alt="instagram"></a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank"><img class="ins"
+                                    src="/images/facebook.png" alt="facebook"></a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.youtube.com/" target="_blank"><img class="ins"
+                                    src="/images/youtube.png" alt="youtube"></a>
+                        </div>
+
+                        <div>
+                            <a href="https://pk.linkedin.com/" target="_blank"><img class="ins"
+                                    src="/images/linkdin.png" alt="linkdin"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copysec">
+            <p>Copyright &copy 1982 – 2025 | Prime Fitness, All Rights Reserved</p>
+
+            <p>Asked Qustions? <i class="fa-solid fa-envelope"></i>Email Us at: <a href="https://mail.google.com/"
+                    target="_blank">info@primefitness.com.pk</a></p>
+        </div>
+
+        </footper>
+        <!-- footer end-->
+
+        <!-- js link  -->
+    <script src="common.js"></script>
+
+</body>
+
+</html>

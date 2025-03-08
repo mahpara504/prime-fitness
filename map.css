@@ -1,0 +1,168 @@
+/* maps  */
+.containers {
+    max-width: 1700px;
+    margin: 0 auto 40px;
+}
+
+.h1m {
+    text-align: center;
+    margin-bottom: clamp(10px, 4vw, 30px);
+    color: #ffd700;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
+    margin-top: 100px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map-wrapper {
+    flex: 1 1 300px;
+    max-width: 100%;
+    border-radius: clamp(4px, 1vw, 8px);
+    overflow: hidden;
+    background-color: white;
+}
+
+.h2m {
+    padding: clamp(6px, 1.5vw, 10px);
+    background-color: #ffd700;
+    color: black;
+    font-weight: 530;
+    text-align: center;
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+}
+
+.map {
+    width: 100%;
+    height: clamp(150px, 40vw, 300px);
+    border: 0;
+    display: block;
+}
+
+@media screen and (min-width: 900px) {
+    .map-wrapper {
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .map-wrapper {
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .map-wrapper {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    .map-wrapper:last-child {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .map-wrapper {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .map {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .h1m {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .h2m {
+        font-size: 1.1rem;
+    }
+
+    .map-container {
+        gap: 15px;
+    }
+
+    .map {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .h1m {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .h2m {
+        font-size: 1rem;
+    }
+
+    .map {
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .containers {
+        padding: 0 5px;
+    }
+
+    .h1m {
+        font-size: 1.5rem;
+    }
+
+    .map {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .h1m {
+        font-size: 1.3rem;
+    }
+
+    .h2m {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .map {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .containers {
+        padding: 0 3px;
+    }
+
+    .h1m {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .h2m {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    .map-container {
+        gap: 10px;
+    }
+
+    .map {
+        height: 150px;
+    }
+
+    .map-wrapper {
+        border-radius: 4px;
+    }
+}

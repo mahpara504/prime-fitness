@@ -1,0 +1,220 @@
+/* working  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffc107;
+    font-weight: 700;
+}
+
+.section {
+    padding: 80px 0;
+    background-color: #222;
+}
+
+.section:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.hero {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 2px solid #ffc107;
+}
+
+.hero-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
+.hero-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-custom {
+    background-color: #FFD700;
+    color: #1a1a1a;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #fff;
+    color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.section:nth-child(even) .feature-box {
+    background-color: #222;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #ffc107;
+    margin-bottom: 20px;
+}
+
+.counter-box {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: #222;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.counter-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.counter-text {
+    font-size: 18px;
+    color: white;
+}
+
+.class-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.section:nth-child(even) .class-card {
+    background-color: #222;
+}
+
+.class-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.class-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.class-content {
+    padding: 20px;
+}
+
+.testimonial {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.section:nth-child(even) .testimonial {
+    background-color: #222;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: #ffc107;
+}
+
+.cta {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hexagon-paragraph {
+    position: relative;
+    background-color: #FFD700;
+    color: #1a1a1a;
+    padding: 30px;
+    margin: 30px 0;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+    font-weight: 500;
+}
+
+.wave-paragraph {
+    position: relative;
+    background-color: #FFD700;
+    color: #1a1a1a;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.wave-paragraph::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%23ffc107" opacity="1"></path></svg>');
+    background-size: cover;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .counter-box {
+        margin-bottom: 20px;
+    }
+
+    .hexagon-paragraph,
+    .wave-paragraph {
+        padding: 20px;
+        margin: 20px 0;
+    }
+}
